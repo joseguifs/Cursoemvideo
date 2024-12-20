@@ -3,7 +3,7 @@ from datetime import datetime
 
 def validar_nome(name):
     try:
-        namej = ''.join(name.split().strip())
+        namej = ''.join(name.split())
         caracter = [char for char in namej if not char.isalpha()]
         if not any(caracter):
             print("NOME VÁLIDO")
